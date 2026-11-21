@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>BasicPlus se ha mudado</title>
+<script>
+  // BasicPlus se mudó a la organización micro32-suite (V8.1, noviembre de 2026), y GitHub no redirige las
+  // páginas de un repositorio transferido: cada dirección vieja va a la misma ruta en el sitio nuevo.
+  // El IDE de V8.0 enlazaba «legio-e.github.io/basicplus/», en minúsculas: se corrige el nombre.
+  (function () {
+    var ruta = location.pathname.replace(/^\/basicplus(?=\/|$)/i, "/BasicPlus");
+    if (ruta === "/" || ruta === "") ruta = "/BasicPlus/";
+    location.replace("https://micro32-suite.github.io" + ruta + location.search + location.hash);
+  })();
+</script>
+<style>
+  body { font-family: system-ui, sans-serif; max-width: 40em; margin: 3em auto; padding: 0 1em; line-height: 1.5; }
+</style>
+</head>
+<body>
+<p>BasicPlus se ha mudado a <a href="https://micro32-suite.github.io/BasicPlus/">micro32-suite.github.io/BasicPlus</a>.</p>
+<p>BasicPlus has moved to <a href="https://micro32-suite.github.io/BasicPlus/">micro32-suite.github.io/BasicPlus</a>.</p>
+</body>
+</html>
